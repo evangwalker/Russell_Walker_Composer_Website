@@ -1,0 +1,151 @@
+body {
+    background-color: black;
+    margin: 0;
+    font-family: "Abel", sans-serif;
+    color: white;
+}
+
+header {
+    display: flex;
+    padding: 1rem;
+    align-items: center;
+
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.hero-text h1,
+.hero-text p {
+    margin: 0;
+}
+
+header > a {
+    margin: 0;
+}
+
+header > a img {
+    height: 3.5rem;
+    width: auto;
+    display: block;
+    margin: 0;
+}
+
+nav {
+    margin-left: auto;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-evenly;
+    gap: clamp(0.5rem, 2vw, 2rem);
+
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    list-style-type: none;
+}
+
+nav li a {
+    color: white;
+    text-decoration: none;
+    font-size: clamp(1rem, 2vw, 1.25rem);
+}
+
+.hero {
+    width: 50%;
+    margin: 0 auto;
+}
+
+.hero h1 {
+    font-size: clamp(1.5rem, 3.5vw, 4rem);
+    font-weight: 350;
+    margin: 0;
+    text-align: center;
+}
+
+.hero img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.social-links {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    display: flex;
+    justify-content: center;
+    gap: clamp(0.75rem, 5vw, 5rem);
+}
+
+.social-links li a {
+    display: inline-block;
+    background-color: white;
+    color: black;
+
+    padding: clamp(0.3rem, 1vw, 0.5rem)
+            clamp(0.8rem, 2vw, 2rem);
+
+    border-radius: 9999px;
+
+    text-decoration: none;
+    font-size: clamp(1rem, 2vw, 1.5rem);
+    font-weight: 600;
+}
+
+.about {
+    width: 50%;
+    margin: 0 auto;
+}
+
+.about h2 {
+    font-size: clamp(2rem, 2vw, 2rem);
+    font-weight: 300;
+}
+
+.about p {
+    font-size: clamp(1rem, 1.5vw, 1.5rem);
+    font-weight: 250;
+}
+
+a {
+    transition: opacity 0.2s ease;
+}
+
+a:hover {
+    opacity: 0.7;
+}
+
+a:focus-visible {
+    outline: 2px solid white;
+    outline-offset: 4px;
+}
+
+.social-links a:hover,
+.imdb-link:hover {
+    opacity: 0.8;
+    transform: scale(1.03);
+}
+
+.social-links a:focus-visible,
+.imdb-link:focus-visible {
+    outline: 3px solid white;
+    outline-offset: 3px;
+}
+
+.skip-link {
+    position: absolute;
+    left: -9999px;
+}
+
+.skip-link:focus {
+    left: 1rem;
+    top: 1rem;
+    z-index: 2000;
+    background: white;
+    color: black;
+    padding: 0.75rem 1rem;
+}

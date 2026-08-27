@@ -1,0 +1,213 @@
+body {
+    background-color: black;
+    margin: 0;
+    font-family: "Abel", sans-serif;
+    color: white;
+}
+
+header {
+    display: flex;
+    padding: 1rem;
+    align-items: center;
+
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header > a {
+    margin: 0;
+}
+
+header > a img {
+    height: 3.5rem;
+    width: auto;
+    display: block;
+    margin: 0;
+}
+
+nav {
+    margin-left: auto;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-evenly;
+    gap: clamp(0.5rem, 2vw, 2rem);
+
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    list-style-type: none;
+}
+
+li a {
+    color: white;
+    text-decoration: none;
+    font-size: clamp(1rem, 2vw, 1.25rem);
+}
+
+h1 {
+    font-size: clamp(1.5rem, 3.5vw, 4rem);
+    font-weight: 350;
+    margin: 0;
+    text-align: center;
+    padding-bottom: 2rem;
+}
+
+.hero {
+    width: 60%;
+    margin: 0 auto;
+    display: flex;
+    height: clamp(20rem, 26vw, 24rem);
+}
+
+.hero h2 {
+    font-size: clamp(1.5rem, 2.5vw, 3rem);
+    font-weight: 350;
+    margin: 0;
+    text-align: center;
+}
+
+.hero-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.hero-text h2,
+.hero-text p {
+    margin: 0;
+}
+
+.hero-text p {
+    width: 90%;
+    margin: 0 auto;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.hero img {
+    display: block;
+    object-fit: contain;
+    height: 100%;
+    border-radius: 0.5rem;
+}
+
+.hero > img,
+.hero-text {
+    flex: 1;
+    min-width: 0;
+}
+
+.social-links {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    display: flex;
+    justify-content: center;
+    gap: clamp(0.25rem, 1vw, 1rem);
+    flex-wrap: wrap;
+}
+
+.social-links li a {
+    display: inline-block;
+    background-color: white;
+    color: black;
+
+    padding: clamp(0.3rem, 0.8vw, 0.4rem)
+            clamp(0.8rem, 1.7vw, 1.7rem);
+
+    border-radius: 9999px;
+
+    text-decoration: none;
+    font-size: clamp(1rem, 2vw, 1.5rem);
+    font-weight: 600;
+}
+
+.about {
+    width: 60%;
+    margin: 0 auto;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.about h2 {
+    font-size: clamp(1rem, 2vw, 2rem);
+    font-weight: 300;
+}
+
+.about p {
+    font-size: clamp(1rem, 1.5vw, 1.5rem);
+    font-weight: 250;
+}
+
+.about h3 {
+    font-size: clamp(1rem, 1.5vw, 1.5rem);
+    font-weight: 300;
+}
+
+.about ul {
+    display: flex;
+    flex-direction: column;
+}
+
+.song-list li {
+    display: flex;
+    flex-direction: column;
+}
+
+.song-list span {
+    font-size: 0.9em;
+}
+
+@media (max-width: 900px) {
+    .hero {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .hero > img,
+    .hero-text {
+        width: 100%;
+    }
+}
+
+a {
+    transition: opacity 0.2s ease;
+}
+
+a:hover {
+    opacity: 0.7;
+}
+
+a:focus-visible {
+    outline: 2px solid white;
+    outline-offset: 4px;
+}
+
+.social-links a:hover,
+.imdb-link:hover {
+    opacity: 0.8;
+    transform: scale(1.03);
+}
+
+.social-links a:focus-visible {
+    outline: 3px solid white;
+    outline-offset: 3px;
+}
+
+.skip-link {
+    position: absolute;
+    left: -9999px;
+}
+
+.skip-link:focus {
+    left: 1rem;
+    top: 1rem;
+    z-index: 2000;
+    background: white;
+    color: black;
+    padding: 0.75rem 1rem;
+}

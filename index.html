@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Russell Walker | Composer</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+    <header>
+        <a href="index.html">
+        <img src="./media/images/russell_logo.png" alt="Russell Walker">
+        </a>
+        <nav>
+            <ul>
+                <li><a href="#music">Music</a></li>
+                <li><a href="#bio">Bio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="https://www.imdb.com/name/nm0908184/">IMDB</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="main-content" tabindex="-1">
+        <section class="hero">
+            <img src="./media/images/main_page_image.jpg" alt="">
+
+            <div class="hero-text">
+                <h1>Russell Walker</h1>
+                <p>COMPOSER | SONGWRITER</p>
+            </div>
+        </section>
+
+        <section id="music" class="music">
+            <h2>PROJECTS | MUSIC</h2>
+
+            <ul>
+                <li class="music-tile"><a href="./waupoos-barn-incident/"><img src="./media/images/waupoosbarn.jpg" alt="Waupoos Barn Incident"></a></li>
+                <li class="music-tile"><a href="./autocondo/index.html"><img src="./media/images/autocondo.png" alt="Auto Condo"></a></li>
+            </ul>
+        </section>
+
+        <section id="bio" class="bio">
+            <div class="bio-content">
+                <h2>RUSSELL WALKER</h2>
+                <p id="bio-lower-title">COMPOSER | SONGWRITER</p>
+                <img src="./media/images/russell_walker.jpg" alt="Russell Walker">
+                <p class="bio-text">
+                    Russ started his road to a career in music studying guitar and classical flute in the early 70’s. 
+                    He worked as a recording engineer in the late 70’s, making records for bands, and gradually started 
+                    writing music as well as doing audio post for tv/film.
+                </p>
+                <p class="bio-text">
+                    Russ also played guitar and keyboards in several bands including New Regime, who were signed to RCA 
+                    Records in 1985. Russ studied harmony and composition at the Royal Conservatory from 1999-2001.
+                </p>
+                <p class="bio-text">
+                    From 1994 to 2014 he owned and operated Kitchen Sync Digital Audio, a post production facility for 
+                    TV and Film. His facility was one of the first in Canada to go completely tapeless. Russ worked as 
+                    sound supervisor or sound editor on many award-winning documentary films and drama series including 
+                    Cracked, The Border, Shake Hands With the Devil, Genius Within: The Inner Life of Glenn Gould, Turning 
+                    Points in History, Outlaw Bikers, The Nature of Things, and Sugar Coated. 
+                </p>
+                <p class="bio-text">
+                    Most recently wrote the music for Paul Saltzman’s ‘Meeting The Beatles In India’ exec produced by David 
+                    Lynch and featuring narration by Morgan Freeman.
+                </p>
+                <p class="bio-text">
+                    Currently recording and releasing songs with Neil Chapman and The Waupoos Barn Incident.
+                </p>
+                <a class="imdb-button" href="https://www.imdb.com/name/nm0908184/">IMDB</a>
+            </div>
+        </section>
+
+        <section class="gallery">
+            <h2>GALLERY</h2>
+
+            <div class="carousel">
+                <button class="carousel-prev" aria-label="Previous image">
+                    &#10094;
+                </button>
+
+                <div class="carousel-images">
+                    <img src="./media/images/slide_band_playing_studio.jpeg" alt="Russell and Neil playing instruments in the studio">
+                    <img src="./media/images/slide_barn_construction.jpeg" alt="Building studio in barn">
+                    <img src="./media/images/slide_barn_outside.jpeg" alt="Exterior of barn">
+                    <img src="./media/images/slide_barns_outside.jpeg" alt="Both red and big barn exterior">
+                    <img src="./media/images/slide_neil.jpeg" alt="Neil playing guitar in a store">
+                    <img src="./media/images/slide_recording_russ_eddy.jpeg" alt="Russell and Eddy at SoundAdvice recording studio">
+                    <img src="./media/images/slide_studio_instruments.jpeg" alt="Studio instruments">
+                    <img src="./media/images/slide_studio_russ.jpeg" alt="Russell at SoundAdvice recording studio">
+                    <img src="./media/images/slide_studio_russ_neil.jpeg" alt="Russell and Neil in the studio">
+                    <img src="./media/images/slide_studio_russ_neil_playing.jpeg" alt="Russell and Neil playing instruments in the studio">
+                     
+                </div>
+
+                <button class="carousel-next" aria-label="Next image">
+                    &#10095;
+                </button>
+            </div>
+        </section>
+
+        <section id="contact" class="contact">
+            <h2>GET IN TOUCH!</h2>
+            <form 
+                action="https://formspree.io/f/mqpkzbdb"
+                method="POST"
+            >
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" placeholder="Name" required>
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Email" required>
+
+                <label for="message">Message</label>
+                <textarea id="message" name="message" placeholder="Message" required></textarea>
+
+                <button type="submit">Send</button>
+            </form>
+        </section>
+    </main>
+    <script src="./scripts.js"></script> 
+  </body>
+</html>
