@@ -5,6 +5,10 @@ body {
     color: white;
 }
 
+li {
+    list-style-type: none;
+}
+
 header {
     display: flex;
     padding: 1rem;
@@ -13,6 +17,7 @@ header {
     position: sticky;
     top: 0;
     z-index: 1000;
+    background-color: rgba(0, 0, 0, 0.7);
 }
 
 header > a {
@@ -39,11 +44,7 @@ nav ul {
     padding: 0;
 }
 
-nav li {
-    list-style-type: none;
-}
-
-li a {
+nav li a {
     color: white;
     text-decoration: none;
     font-size: clamp(1rem, 2vw, 1.25rem);
@@ -102,6 +103,16 @@ h1 {
     min-width: 0;
 }
 
+.hero-text p {
+    font-size: clamp(1rem, 1.5vw, 1.5rem);
+    font-weight: 250;
+}
+
+.credits-tabs button:focus-visible {
+    outline: 3px solid white;
+    outline-offset: 3px;
+}
+
 .social-links {
     padding-top: 1rem;
     padding-bottom: 1rem;
@@ -109,6 +120,10 @@ h1 {
     justify-content: center;
     gap: clamp(0.25rem, 1vw, 1rem);
     flex-wrap: wrap;
+}
+
+.social-links li {
+    list-style-type: none;
 }
 
 .social-links li a {
@@ -139,7 +154,7 @@ h1 {
 }
 
 .about p {
-    font-size: clamp(1rem, 1.5vw, 1.5rem);
+    font-size: clamp(1rem, 1.3vw, 1.3rem);
     font-weight: 250;
 }
 
@@ -153,9 +168,36 @@ h1 {
     flex-direction: column;
 }
 
+.credits-tabs {
+    width: 40%;
+    border-bottom: 1px solid white;
+}
+
+.credits-tabs button {
+    font-family: inherit;
+    font-size: clamp(1rem, 1.5vw, 1.5rem);
+    font-weight: 300;
+    background-color: black;
+    color: white;
+    border: none;
+}
+
+.credits-tabs button.active {
+    background-color: white;
+    color: black;
+}
+
+.credits-panel h3 {
+    font-size: clamp(1rem, 1.3vw, 1.3rem);
+    font-weight: 300;
+    margin-left: 10%;
+}
+
 .song-list li {
     display: flex;
     flex-direction: column;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
 }
 
 .song-list span {
@@ -187,8 +229,7 @@ a:focus-visible {
     outline-offset: 4px;
 }
 
-.social-links a:hover,
-.imdb-link:hover {
+.social-links a:hover {
     opacity: 0.8;
     transform: scale(1.03);
 }
