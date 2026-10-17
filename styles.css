@@ -94,6 +94,7 @@ nav li a {
     font-size: clamp(1.0rem, 2.5vw, 2rem);
     font-weight: 350;
     margin: 0;
+    text-transform: uppercase;
 }
 
 .music {
@@ -105,6 +106,7 @@ nav li a {
     font-size: clamp(2rem, 2.5vw, 2.5rem);
     font-weight: 300;
     text-align: center;
+    text-transform: uppercase;
 }
 
 .music-divider {
@@ -171,6 +173,7 @@ nav li a {
 .featured .about h4 {
     font-size: clamp(1.0rem, 2.5vw, 2rem);
     font-weight: 300;
+    text-transform: uppercase;
 }
 
 .featured .about p {
@@ -223,6 +226,7 @@ nav li a {
     text-align: center;
     margin: 0 auto;
     margin-bottom: 1rem;
+    text-transform: uppercase;
 }
 
 .bio img {
@@ -259,6 +263,7 @@ nav li a {
     font-size: clamp(2rem, 2.5vw, 2.5rem);
     font-weight: 300;
     text-align: center;
+    text-transform: uppercase;
 }
 
 .carousel {
@@ -306,6 +311,7 @@ nav li a {
     font-size: clamp(2rem, 2.5vw, 2.5rem);
     font-weight: 300;
     text-align: center;
+    text-transform: uppercase
 }
 
 form {
